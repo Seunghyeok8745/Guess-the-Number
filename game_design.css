@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: auto;
+  color: aliceblue;
+}
+.container {
+  background-image: url(treasure_cave2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 540px;
+  height: 750px;
+  padding-top: 90px;
+  margin: 0;
+  opacity: 95%;
+}
+h1,
+p {
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+  font-size: 34px;
+  padding-bottom: 35px;
+  opacity: 90%;
+}
+p {
+  font-size: 15px;
+  opacity: 15%;
+  letter-spacing: 1px;
+}
+h2 {
+  text-align: center;
+  color: white;
+  font-weight: 10;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+#main-title {
+  margin-top: 50px;
+}
+#result,
+#chance-area {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+#result {
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding-bottom: 40px;
+  letter-spacing: 2px;
+  color: #e5e9ec;
+}
+#chance-area {
+  font-size: 18px;
+  opacity: 95%;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+#user-num {
+  width: 260px;
+  height: 35px;
+  background-color: rgba(43, 19, 0, 0.849);
+  border: 0.5px solid rgb(255, 211, 13);
+  color: white;
+  border-radius: 5px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+button {
+  width: 200px;
+  height: 55px;
+  margin: 20px 0;
+  background-color: rgba(193, 95, 15, 0.849);
+  color: rgb(255, 255, 255);
+  border: 0.5px solid rgb(255, 211, 13);
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(193, 95, 15);
+}
+
+#user-num:hover {
+  background-color: rgb(49, 26, 7);
+}
+#win,
+#lose {
+  position: relative;
+  margin-top: -80px;
+  padding: 0 20px;
+}
+#lose {
+  display: none;
+  height: 300px;
+}
+#answer {
+  margin-top: 45px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: rgb(254, 254, 254);
+  font-size: 25px;
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+  }
+  #result {
+    font-size: 27px;
+  }
+  #chance {
+    font-size: 16px;
+  }
+  #win,
+  #lose {
+    margin-bottom: 5px;
+  }
+  .container2 {
+    margin-top: 85px;
+  }
+}

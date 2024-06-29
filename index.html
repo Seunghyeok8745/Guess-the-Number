@@ -3,16 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="game_design.css" />
-
     <title>Document</title>
+    <link rel="stylesheet" href="game_design.css" />
   </head>
   <body>
-    <h1>Number Guessing Game</h1>
-
-    <h4 id="result-area">Let's see what you got!</h4>
-    <input type="number" id="user-input" />
-    <button id="main-btn">Guess!</button>
+    <div class="container" id="mainBox">
+        <h1 id="main-title"><b>운명의 숫자를 맞춰보세요!</b></h1>
+        <h2 id="subtitle">행운을 빌어요!</h2>
+      <div class="container2">
+        <div id="result" hidden></div>
+        <div id="chance-area">기회는 단 5번!</div>
+        <img src="jackpot.gif" alt="jackpot" id ="win" hidden>
+        <img src="badLuck.gif" alt="bad-luck" id ="lose" >
+        <div class="input">
+          <input type="number" name="" id="user-num" size="10" placeholder="번호를 입력해주세요"/>
+        </div>
+        <div class="buttons">
+          <div id="answer" hidden></div>
+          <button id="play-button">시작</button>
+          <button id="reset-button">재도전</button>
+        </div>
+        </div>
+      </div>
+    </div>
     <script src="game_function.js"></script>
   </body>
 </html>

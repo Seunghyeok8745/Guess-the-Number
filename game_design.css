@@ -46,7 +46,7 @@ h2 {
 .container2 {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 20px 0;
 }
 #main-title {

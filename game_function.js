@@ -68,7 +68,7 @@ function play() {
     jackPot.style.display = 'block';
     gameName.style.display = 'none';
     gameType.style.display = 'none';
-    parentElement.insertBefore(userResult, gameName);
+    parentElement.insertBefore(userResult, gameName); //gameName위치에 결과를 위치 시킴
     return;
   }
 

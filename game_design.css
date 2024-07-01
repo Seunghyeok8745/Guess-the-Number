@@ -17,7 +17,7 @@ body {
   height: 750px;
   padding-top: 80px;
   margin: 0;
-  opacity: 95%;
+  background-position-x: -50px;
 }
 h1,
 p {
@@ -64,7 +64,7 @@ h2 {
   font-weight: bold;
   padding-bottom: 40px;
   letter-spacing: 2px;
-  color: #e5e9ec;
+  color: #ffffff;
 }
 #chance-area {
   font-size: 18px;

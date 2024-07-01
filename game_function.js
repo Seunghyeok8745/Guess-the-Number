@@ -3,7 +3,7 @@ let playButton = document.getElementById('play-button');
 let userInput = document.getElementById('user-num');
 let userResult = document.getElementById('result');
 let resetButton = document.getElementById('reset-button');
-let chances = 5;
+let chances = 3;
 let chanceArea = document.getElementById('chance-area');
 let history = [];
 let answerArea = document.getElementById('answer');
@@ -113,8 +113,8 @@ function reset() {
   resetButton.style.bottom = 'auto';
   parentResult.insertBefore(userResult, chanceArea);
   playButton.disabled = false;
-  chances = 5;
-  chanceArea.textContent = `기회는 단 5번!`;
+  chances = 3;
+  chanceArea.textContent = `기회는 단 3번!`;
   history = [];
   answerArea.hidden = true;
 
